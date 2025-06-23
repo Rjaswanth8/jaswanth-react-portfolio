@@ -1,24 +1,16 @@
 // server/Server.js
-// npm init -y
-// To install express and mongoDB -- npm install express mongoose cors body-parser dotenv
 
 const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
 const bodyParser = require("body-parser");
 require("dotenv").config();
-
-// const path = require("path");
-
-// app.use(express.static(path.join(__dirname, "../client/build")));
-
-// app.get("*", (req, res) => {
-//   res.sendFile(path.join(__dirname, "../public/build/index.html"));
-// });
+const path = require("path");
 
 const app = express();
 const PORT = process.env.PORT || 5000;
 
+// Middleware
 app.use(cors());
 app.use(bodyParser.json());
 
@@ -52,6 +44,13 @@ app.post("/contact", async (req, res) => {
       .status(500)
       .json({ success: false, message: "Server error", error: err.message });
   }
+});
+
+// Serve React build static files
+app.use(express.static(path.join(__dirname, "../build")));
+
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "../build/index.html"));
 });
 
 app.listen(PORT, () => {
