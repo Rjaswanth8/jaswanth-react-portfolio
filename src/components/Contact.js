@@ -31,8 +31,8 @@ function Contact() {
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
-    setError(""); // Clear error on change
-    setSuccess(""); // Clear success on change
+    setError("");
+    setSuccess("");
   };
 
   const handleSubmit = async (e) => {
@@ -45,7 +45,7 @@ function Contact() {
     }
 
     try {
-      const response = await fetch("http://localhost:5000/contact", {
+      const response = await fetch("/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
@@ -77,6 +77,7 @@ function Contact() {
         </h1>
         <span className="resume">Contact</span>
       </div>
+
       <div className="container contact">
         <div className="row">
           <div
@@ -91,12 +92,11 @@ function Contact() {
               new projects, creative ideas or opportunities to be part of your
               visions.
             </p>
-            {contactDetails.map((item) => (
-              <div className="contact-content-div">
+            {contactDetails.map((item, index) => (
+              <div className="contact-content-div" key={index}>
                 <p className="contact-text">
                   <span dangerouslySetInnerHTML={{ __html: item.icon }} />
                   <span className="d-block contact-span">{item.title}</span>
-
                   {item.contact}
                 </p>
               </div>
@@ -112,7 +112,7 @@ function Contact() {
                   href="https://www.facebook.com/kittuchowdary.ravini"
                   target="__blank"
                 >
-                  <i class="fa-brands fa-facebook-f"></i>
+                  <i className="fa-brands fa-facebook-f"></i>
                 </a>
               </li>
               <li
@@ -124,7 +124,7 @@ function Contact() {
                   href="https://www.instagram.com/_.kittuchowdary._/"
                   target="__blank"
                 >
-                  <i class="fa-brands fa-instagram"></i>
+                  <i className="fa-brands fa-instagram"></i>
                 </a>
               </li>
               <li
@@ -136,7 +136,7 @@ function Contact() {
                   href="https://www.linkedin.com/in/jaswanth-r-9285b2239/"
                   target="__blank"
                 >
-                  <i class="fa-brands fa-linkedin-in"></i>
+                  <i className="fa-brands fa-linkedin-in"></i>
                 </a>
               </li>
               <li
@@ -145,11 +145,12 @@ function Contact() {
                 data-aos="fade-right"
               >
                 <a href="https://wa.me/8688086646" target="__blank">
-                  <i class="fa-brands fa-whatsapp"></i>
+                  <i className="fa-brands fa-whatsapp"></i>
                 </a>
               </li>
             </ul>
           </div>
+
           <div
             className="col-lg-8 col-sm-12 col-xs-12"
             data-aos-duration="1000"
@@ -158,7 +159,6 @@ function Contact() {
           >
             <form className="contactform" onSubmit={handleSubmit}>
               <div className="row">
-                {/* Inputs */}
                 <div className="col-lg-6 form-group">
                   <input
                     type="text"
@@ -179,7 +179,7 @@ function Contact() {
                     required
                   />
                 </div>
-                <div className="col-lg-12 form-group ">
+                <div className="col-lg-12 form-group">
                   <input
                     type="text"
                     name="subject"
@@ -199,11 +199,9 @@ function Contact() {
                   ></textarea>
                 </div>
 
-                {/* Feedback messages */}
                 {error && <p style={{ color: "red" }}>{error}</p>}
                 {success && <p style={{ color: "green" }}>{success}</p>}
 
-                {/* Submit button */}
                 <div className="download-cv">
                   <button type="submit" className="button">
                     <span>send message</span>
