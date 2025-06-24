@@ -1,14 +1,14 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "description": "",
+  "description": "Backend for React portfolio",
   "main": "Server.js",
   "scripts": {
     "start": "node Server.js",
-    "postinstall": "cd .. && npm install && npm run build"
+    "postinstall": "cd ../public && npm install && npm run build"
   },
   "keywords": [],
-  "author": "",
+  "author": "jaswanth",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^2.2.0",
