@@ -494,7 +494,7 @@ header i {
   bottom: 0px;
   width: 55px;
   height: 55px;
-  display: flex;
+  display: flex !;
   justify-content: center;
   align-items: center;
   font-size: 19px;
