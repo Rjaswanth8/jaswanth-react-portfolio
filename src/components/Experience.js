@@ -4,21 +4,22 @@ function Experience() {
       role: "SaaS Developer - II",
       year: "June 2024 - Present",
       company: "Meritto (Formerly NoPaperForms)",
-      text: "Enhancing the student dashboard UI for better user experience.",
-      moredetails: `<h6>A SaaS company providing educational technology solutions</h6>
-
+      text: "Developing Student Dashboard for IIT Madras & SRM Group of Institutions Using React.JS.",
+      moredetails: `<h6>Student Dashboard for IIT Madras & SRM Group of Institutions</h6>
 <ul>
-  <li>Creating and developing landing pages for lead capturing.</li>
+  <li>Built and maintained a responsive student dashboard using <strong>React.js</strong> for managing application forms of IIT Madras and SRM institutions.</li>
+  <li>Developed modular and reusable React components for form sections, input fields, and validation messages.</li>
+  <li>Integrated dynamic workflows based on student selections (e.g., program, campus, specialization) using <strong>React state management (useState, useEffect)</strong>.</li>
+  <li>Designed a clean and intuitive UI using <strong>Tailwind CSS</strong> and <strong>Bootstrap</strong> for responsive layout and styling.</li>
+  <li>Used <strong>React Router</strong> for multi-page navigation within the dashboard, enabling features like application tracking and exam result views.</li>
+  <li>Applied conditional rendering and role-based access control for different types of users (student, admin, evaluator).</li>
+  <li>Followed component-driven development practices with proper folder structuring and code reusability.</li>
+  <li>Utilized <strong>Git</strong> for version control and worked in an Agile environment with regular code reviews and sprint planning.</li>
+   <li> Additionally part of Creating and developing landing pages for lead capturing.</li>
   <li>Utilizing drag-and-drop builders for responsive landing pages.</li>
-  <li>Creating templates for student communication, including emails and application forms.</li>
-  <li>Building online forms to capture student information and implementing JavaScript for form validation.</li>
-  <li>Enhancing the student dashboard UI for a better user experience.</li>
-  <li>Integrating exams for students and populating results in the Application Manager for institute reference.</li>
-  <li>Setting up automated workflows for student communications.</li>
-  <li>Integrating telephony systems for improved communication.</li>
-  <li>Configuring payment systems for student fee processing.</li>
   <li>Creating and training the chatbot “Niaa” for lead capturing and student enrollment.</li>
-</ul>`,
+</ul>
+`,
     },
     {
       role: "Web Developer Intern",
@@ -77,7 +78,7 @@ CSS, Javascript, React.JS</li>
             {experienceList.map((item) => (
               <div className="ex-edu-content">
                 <div>
-                  <i class="fa-solid fa-briefcase" aria-hidden="true"></i>
+                  <i className="fa-solid fa-briefcase" aria-hidden="true"></i>
                 </div>
                 <div>
                   <span className="year">{item.year}</span>
@@ -89,7 +90,7 @@ CSS, Javascript, React.JS</li>
                   <div className="info-section">
                     <p className="info-content">
                       More Details
-                      <i class="fa-solid fa-circle-info"></i>{" "}
+                      <i className="fa-solid fa-circle-info"></i>{" "}
                       <span
                         className="more-info"
                         dangerouslySetInnerHTML={{ __html: item.moredetails }}
