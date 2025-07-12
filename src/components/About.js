@@ -206,7 +206,7 @@ function About() {
                 <div>
                   <i class="fa-solid fa-briefcase" aria-hidden="true"></i>
                 </div>
-                <div>
+                <div className="box-shadow">
                   <span className="year">{item.year}</span>
                   <h5 className="ex-edu-heads">
                     {item.role} - <span>{item.company}</span>

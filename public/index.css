@@ -313,12 +313,12 @@ header i {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
-  height: calc(100vh - 80px);
+  height: calc(70vh - 80px);
   z-index: 11;
   border-radius: 30px;
   width: 30%;
 
-  top: 40px;
+  top: 120px;
   box-shadow: 0 0 7px rgba(0, 0, 0, 0.9);
 }
 .profile-content {
@@ -785,6 +785,8 @@ hr.separator {
   .info-content .more-info {
     overflow-x: auto;
     white-space: nowrap;
+    height: 150px;
+    overflow-y: scroll;
   }
 }
 .info-content h6 {
@@ -795,7 +797,14 @@ hr.separator {
   font-weight: 400;
   color: #fff;
 }
-
+.box-shadow {
+  background: #141414;
+  padding: 10px 30px;
+  border-radius: 20px;
+  border-left: 1px solid;
+  box-shadow: -1px 0 #e50914, 0 1px #c31f52;
+  width: 645px;
+}
 .info-section p {
   color: #fff;
   position: relative;
@@ -823,7 +832,8 @@ hr.separator {
   width: 700px;
   color: #fff;
   position: absolute;
-
+  height: 250px;
+  overflow-y: scroll;
   bottom: 0;
   left: -25px;
   right: -25px;

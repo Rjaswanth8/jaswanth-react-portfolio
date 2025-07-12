@@ -36,7 +36,7 @@ function Education() {
       <div className="container education">
         <div className="row">
           <div
-            className="col-lg-8"
+            className="col-lg-7"
             data-aos-duration="1000"
             data-aos-delay="200"
             data-aos="fade-right"
@@ -46,7 +46,7 @@ function Education() {
                 <div>
                   <i class="fa-solid fa-graduation-cap cap"></i>
                 </div>
-                <div>
+                <div className="box-shadow">
                   <span className="year">{item.year}</span>
                   <h5 className="ex-edu-heads">
                     {item.degree} - <span>{item.college}</span>

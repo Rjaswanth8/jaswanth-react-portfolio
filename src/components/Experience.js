@@ -70,7 +70,7 @@ CSS, Javascript, React.JS</li>
       <div className="container experience">
         <div className="row">
           <div
-            className="col-lg-9"
+            className="col-lg-8"
             data-aos-duration="1000"
             data-aos-delay="200"
             data-aos="fade-right"
@@ -80,7 +80,7 @@ CSS, Javascript, React.JS</li>
                 <div>
                   <i className="fa-solid fa-briefcase" aria-hidden="true"></i>
                 </div>
-                <div>
+                <div className="box-shadow">
                   <span className="year">{item.year}</span>
                   <h5 className="ex-edu-heads">
                     {item.role} - <span>{item.company}</span>
