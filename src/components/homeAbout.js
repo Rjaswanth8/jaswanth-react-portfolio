@@ -60,7 +60,7 @@ function homeAbout() {
           <span className="resume">resume</span>
         </div>
 
-        <h2>personal infos</h2>
+        <h2 className="about-sub-head">personal infos</h2>
         <div className="row">
           <div className="col-lg-6   details">
             <div className="row">

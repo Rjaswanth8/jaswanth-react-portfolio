@@ -227,7 +227,7 @@ function About() {
                 <div>
                   <i class="fa-solid fa-graduation-cap cap"></i>
                 </div>
-                <div>
+                <div className="box-shadow">
                   <span className="year">{item.year}</span>
                   <h5 className="ex-edu-heads">
                     {item.degree} - <span>{item.college}</span>

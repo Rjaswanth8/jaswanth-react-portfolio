@@ -494,7 +494,7 @@ header i {
   bottom: 0px;
   width: 55px;
   height: 55px;
-  display: flex !;
+  display: flex !important;
   justify-content: center;
   align-items: center;
   font-size: 19px;
@@ -786,10 +786,12 @@ hr.separator {
   .info-content .more-info {
     overflow-x: auto;
     white-space: nowrap;
+    width: 180px !important;
+    overflow-y: scroll;
   }
 }
 .box-shadow {
-  background: #141414;
+  background: #f8f8f8;
   padding: 10px 30px;
   border-radius: 20px;
   border-left: 1px solid;
