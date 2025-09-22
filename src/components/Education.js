@@ -3,7 +3,7 @@ function Education() {
     {
       degree: "B.Tech",
       college: "Rgukt rkv (IIIT)",
-      year: "2019 - 2025",
+      year: "2019 - 2023",
       text: "I have done my ug in mechanical engineering from rajiv gandhi university of knowledge technologies (IIIT)",
     },
     {
