@@ -22,7 +22,7 @@ function App() {
   // Dynamically switch CSS file
   useEffect(() => {
     const themeLinkId = "theme-css";
-    const themeHref = isBright ? "/index.css" : "/light.css";
+    const themeHref = isBright ? "/light.css" : "/index.css";
     const existingLink = document.getElementById(themeLinkId);
 
     if (existingLink) {

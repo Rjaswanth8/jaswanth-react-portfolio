@@ -13,13 +13,13 @@ function About() {
       degree: "B.Tech",
       college: "Rgukt rkv (IIIT)",
       year: "2019 - 2025",
-      text: "I have done my ug in mechanical engineering from rajiv gandhi university of knowledge technologies (IIIT)",
+      text: "I have done my ug in mechanical engineering from Indian Institute of Information Technology(IIIT), Kadapa",
     },
     {
       degree: "puc",
       year: "2017 - 2019",
       college: "Rgukt rkv (IIIT)",
-      text: "I have done my puc in MPC from rajiv gandhi university of knowledge technologies (IIIT)",
+      text: "I have done my puc in MPC from Indian Institute of Information Technology(IIIT), Kadapa",
     },
     {
       degree: "SSC",
