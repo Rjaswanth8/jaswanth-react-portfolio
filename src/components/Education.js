@@ -2,7 +2,7 @@ function Education() {
   const educationList = [
     {
       degree: "B.Tech",
-      college: "Rgukt rkv (IIIT)",
+      college: "Indian Institute of Information Technology(IIIT), Kadapa",
       year: "2019 - 2023",
       text: "I have done my ug in mechanical engineering from Indian Institute of Information Technology(IIIT), Kadapa",
     },

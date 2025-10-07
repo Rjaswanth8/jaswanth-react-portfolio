@@ -26,7 +26,8 @@ function Home() {
             <p>
               As a front-end developer, I specialize in developing responsive,
               performant interfaces that deliver seamless user experiences. I'm
-              Jaswanth — driven by clean code and purposeful design.
+              Jaswanth passionate about writing clean code and creating
+              purposeful, user-focused designs.
             </p>
             <div
               className="download-cv"
