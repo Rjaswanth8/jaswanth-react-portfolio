@@ -125,9 +125,9 @@ function About() {
                 data-aos-delay="300"
               >
                 <a
-                  href="/images/resume/Jaswanth R.pdf"
+                  href="/images/resume/R Jaswanth.pdf"
                   className="button"
-                  download="Jaswanth R.pdf"
+                  download="R Jaswanth.pdf"
                 >
                   <span>Download cv</span>
                   <span class="fa-solid fa-download download-icon"></span>
